@@ -27,7 +27,7 @@ function addProjectDetails(e) {
 	var idNumber = projectID.substr('project'.length);
 
 	console.log("User clicked on project " + idNumber);
-	$.get("https://sulab6.herokuapp.com/project"+idNumber, callBackFn);
+	$.get("https://sulab6.herokuapp.com/project/"+idNumber, callBackFn);
 }
 
 function callBackFn(result){
