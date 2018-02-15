@@ -27,7 +27,7 @@ function addProjectDetails(e) {
 	var idNumber = projectID.substr('project'.length);
 
 	console.log("User clicked on project " + idNumber);
-	$.get("http://localhost:3000/project/"+idNumber, callBackFn);)
+	$.get("https://sulab6.herokuapp.com/project"+idNumber, callBackFn);
 }
 
 function callBackFn(result){
@@ -40,9 +40,9 @@ function callBackFn(result){
 
 // function addProject(result) {
 //   var projectHTML = '<a href="#" class="thumbnail">' +
-//     '<img src="' + result['image'] + '" class="img">' +
+//    '<img src="' + result['image'] + '" class="img">' +
 //     '<p>' + result['title'] + '</p>' +
-//     '<p><small>' + result['date'] +
+//    '<p><small>' + result['date'] +
 //     '</small></p></a>'; 
 // }
 
